@@ -14,9 +14,9 @@
   <project path="packages/apps/MaterialFX" name="amirzaidi/MaterialFX" revision="master" remote="github" />
   
   <!-- StatiXOS repos -->
-  <project path="vendor/statix" name="android_vendor_statix" remote="statix" revision="8.1" />
-  <project path="device/huawei/angler" name="android_device_huawei_angler" remote="statix" revision="8.1" />
-  <project path="kernel/huawei/angler" name="android_kernel_huawei_angler" remote="statix" revision="8.1" />
+  <project path="vendor/statix" name="android_vendor_statix" remote="statix" revision="8.1-caf" />
+  <project path="device/essential/mata" name="android_device_essential_mata" remote="statix" revision="8.1-caf" />
+  <project path="kernel/essential/msm8998" name="android_kernel_essential_msm8998" remote="statix" revision="8.1-caf" />
   <project path="frameworks/support" name="android_frameworks_support" remote="statix" revision="8.1" />
   <project path="frameworks/base" name="android_frameworks_base" remote="statix" revision="8.1" />
   <project path="frameworks/av" name="android_frameworks_av" remote="statix" revision="8.1" />
@@ -33,7 +33,7 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="manifest" name="StatiXOS/android_manifest" remote="github" revision="8.1-linux" />
+  <project path="manifest" name="android_manifest" remote="statix" revision="8.1-caf" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="statix" revision="8.1" />
   <project path="packages/apps/Sparks" name="android_packages_apps_Sparks" remote="statix" revision="8.1" />
   <project path="system/extras" name="android_system_extras" remote="statix" revision="8.1" />
