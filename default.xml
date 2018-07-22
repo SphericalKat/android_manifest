@@ -627,4 +627,7 @@
   <!-- Add all custom repos -->
   <include name="include.xml" />
 
+  <!-- HALs -->
+  <include name="caf.xml" />
+
 </manifest>

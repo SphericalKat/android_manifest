@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<remote  name="los"
+         fetch="https://github.com/LineageOS/" />
+
+<!-- Audio -->
+<project path="hardware/qcom/audio-caf/msm8974" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" revision="lineage-15.1-caf-8974" remote="los"/>
+<project path="hardware/qcom/audio-caf/msm8994" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" revision="lineage-15.1-caf-8994" remote="los"/>
+<project path="hardware/qcom/audio-caf/msm8996" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" revision="lineage-15.1-caf-8996" remote="los"/>
+<project path="hardware/qcom/audio-caf/msm8998" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" revision="lineage-15.1-caf-8998" remote="los" />
+
+<!-- Bluetooth -->
+<project path="hardware/qcom/bt-caf" name="android_hardware_qcom_bt" groups="qcom,pdk" revision="lineage-15.1-caf" remote="los"/>
+
+<!-- Display -->
+<project path="hardware/qcom/display-caf/msm8974" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="lineage-15.1-caf-8974" remote="los"/>
+<project path="hardware/qcom/display-caf/msm8994" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="lineage-15.1-caf-8994" remote="los"/>
+<project path="hardware/qcom/display-caf/msm8996" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="lineage-15.1-caf-8996" remote="los"/>
+<project path="hardware/qcom/display-caf/msm8998" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="lineage-15.1-caf-8998" remote="los"/>
+
+<!-- Media -->
+<project path="hardware/qcom/media-caf/msm8974" name="android_hardware_qcom_media" groups="qcom,pdk" revision="lineage-15.1-caf-8974" remote="los"/>
+<project path="hardware/qcom/media-caf/msm8994" name="android_hardware_qcom_media" groups="qcom,pdk" revision="lineage-15.1-caf-8994" remote="los"/>
+<project path="hardware/qcom/media-caf/msm8996" name="android_hardware_qcom_media" groups="qcom,pdk" revision="lineage-15.1-caf-8996" remote="los"/>
+<project path="hardware/qcom/media-caf/msm8998" name="android_hardware_qcom_media" groups="qcom,pdk" revision="lineage-15.1-caf-8998" remote="los"/>
+
+<!-- A combination of misc and important stuff -->
+<project path="hardware/qcom/neuralnetworks/hvxservice" name="android_hardware_qcom_neuralnetworks_hvxservice" remote="los">
+    <copyfile dest="hardware/qcom/Android.bp" src="Android.bp"/>
+</project>
+<project path="hardware/qcom/power" name="android_hardware_qcom_power" groups="qcom,pdk" remote="los"/>
+<project path="hardware/qcom/thermal" name="android_hardware_qcom_thermal" remote="los"/>
+<project path="hardware/qcom/vr" name="android_hardware_qcom_vr" remote="los"/>
+<project path="hardware/qcom/wlan-caf" name="android_hardware_qcom_wlan" groups="qcom_wlan,pdk" revision="lineage-15.1-caf" remote="los"/>
+<project path="hardware/ril-caf" name="android_hardware_ril" groups="pdk" revision="lineage-15.1-caf" remote="los" />
+<project path="system/qcom" name="android_system_qcom" groups="qcom" remote="los"/>
+<project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="los"/>
+<project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="los"/>
+<project path="vendor/nxp/interfaces/opensource/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="los">
+    <linkfile dest="vendor/nxp/interfaces/Android.bp" src="prop_pickup.bp" remote="los"/>
+</project>
+<project path="vendor/nxp/opensource/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="los"/>
+<project path="vendor/nxp/opensource/frameworks" name="android_vendor_nxp_opensource_frameworks" remote="los"/>
+<project path="vendor/nxp/opensource/packages/apps/Nfc" name="android_vendor_nxp_opensource_packages_apps_Nfc" remote="los"/>
+<project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="los" />
+<project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="los"/>
+<project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="los">
+    <copyfile dest="vendor/qcom/opensource/Android.bp" src="os_pickup.bp"/>
+</project>
+<project path="vendor/qcom/opensource/rcs-service" name="android_vendor_qcom_opensource_rcs-service" remote="los"/>
+
+</manifest>
