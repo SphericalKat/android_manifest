@@ -13,6 +13,7 @@
   <project path="external/DUI" name="DirtyUnicorns/android_external_DUI" remote="github" revision="o8x" />
   <project path="packages/apps/MaterialFX" name="amirzaidi/MaterialFX" revision="master" remote="github" />
   <project path="vendor/gapps" name="MindTheGapps/vendor_gapps" revision="master" remote="github" />
+  <project path="prebuilts/clang/host/linux-x86" name="DirtyUnicorns/android_prebuilts_clang_host_linux-x86" revision="o8x" />
   
   <!-- StatiXOS repos -->
   <project path="vendor/statix" name="android_vendor_statix" remote="statix" revision="8.1-caf" />
